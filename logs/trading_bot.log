@@ -23,3 +23,5 @@
 2026-06-01 17:36:37 [INFO] (bot.orders) POST-ORDER RESPONSE RECEIVED:
 2026-06-01 17:36:37 [INFO] (bot.orders) Raw API Response: {'orderId': 2838947304, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'antigravity_lmt_1', 'price': '69000.00', 'avgPrice': '0.00', 'origQty': '0.01', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1780296415000}
 2026-06-01 17:36:37 [INFO] (bot.orders) Parsed response details -> OrderId: 2838947304, Status: NEW, ExecutedQty: 0.000, AvgPrice: 69000.00
+2026-06-01 17:42:32 [INFO] (root) Logging configured successfully. Log file path: D:\tradebot\logs\trading_bot.log
+2026-06-01 17:42:32 [ERROR] (bot.client) API credentials missing: BINANCE_API_KEY or BINANCE_API_SECRET is unset.
