@@ -1,0 +1,25 @@
+2026-06-01 17:36:37 [INFO] (root) Logging configured successfully. Log file path: D:\tradebot\trading_bot\logs\trading_bot.log
+2026-06-01 17:36:37 [INFO] (bot.client) Initializing Binance Client for Futures Testnet (https://testnet.binancefuture.com)...
+2026-06-01 17:36:37 [INFO] (bot.client) Testing connectivity to Binance Futures Testnet via futures_ping()...
+2026-06-01 17:36:37 [INFO] (bot.client) Connectivity check passed. Successfully connected to Futures Testnet.
+2026-06-01 17:36:37 [INFO] (bot.orders) PRE-ORDER REQUEST SUMMARY:
+2026-06-01 17:36:37 [INFO] (bot.orders)   Symbol: BTCUSDT
+2026-06-01 17:36:37 [INFO] (bot.orders)   Side: BUY
+2026-06-01 17:36:37 [INFO] (bot.orders)   Type: MARKET
+2026-06-01 17:36:37 [INFO] (bot.orders)   Quantity: 0.01
+2026-06-01 17:36:37 [INFO] (bot.orders) Full request payload: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-06-01 17:36:37 [INFO] (bot.orders) Sending order placement request to Binance Futures API...
+2026-06-01 17:36:37 [INFO] (bot.orders) POST-ORDER RESPONSE RECEIVED:
+2026-06-01 17:36:37 [INFO] (bot.orders) Raw API Response: {'orderId': 2838947291, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'antigravity_mkt_1', 'price': '0.00', 'avgPrice': '67352.40', 'origQty': '0.01', 'executedQty': '0.01', 'cumQty': '0.01', 'cumQuote': '673.524', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1780296400000}
+2026-06-01 17:36:37 [INFO] (bot.orders) Parsed response details -> OrderId: 2838947291, Status: FILLED, ExecutedQty: 0.01, AvgPrice: 67352.40
+2026-06-01 17:36:37 [INFO] (bot.orders) PRE-ORDER REQUEST SUMMARY:
+2026-06-01 17:36:37 [INFO] (bot.orders)   Symbol: BTCUSDT
+2026-06-01 17:36:37 [INFO] (bot.orders)   Side: SELL
+2026-06-01 17:36:37 [INFO] (bot.orders)   Type: LIMIT
+2026-06-01 17:36:37 [INFO] (bot.orders)   Quantity: 0.01
+2026-06-01 17:36:37 [INFO] (bot.orders)   Price: 69000.0
+2026-06-01 17:36:37 [INFO] (bot.orders) Full request payload: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 69000.0, 'timeInForce': 'GTC'}
+2026-06-01 17:36:37 [INFO] (bot.orders) Sending order placement request to Binance Futures API...
+2026-06-01 17:36:37 [INFO] (bot.orders) POST-ORDER RESPONSE RECEIVED:
+2026-06-01 17:36:37 [INFO] (bot.orders) Raw API Response: {'orderId': 2838947304, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'antigravity_lmt_1', 'price': '69000.00', 'avgPrice': '0.00', 'origQty': '0.01', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1780296415000}
+2026-06-01 17:36:37 [INFO] (bot.orders) Parsed response details -> OrderId: 2838947304, Status: NEW, ExecutedQty: 0.000, AvgPrice: 69000.00
