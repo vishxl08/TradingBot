@@ -27,7 +27,7 @@ console = Console()
 def print_banner():
     """Prints a beautiful, premium welcome banner for the bot."""
     banner_text = Text()
-    banner_text.append("⚡ ANTIGRAVITY BINANCE FUTURES TRADING BOT ⚡\n", style="bold cyan")
+    banner_text.append("=== ANTIGRAVITY BINANCE FUTURES TRADING BOT ===\n", style="bold cyan")
     banner_text.append("USDT-M Futures Testnet Integration", style="italic gold1")
     
     panel = Panel(
@@ -73,7 +73,7 @@ def run_interactive_ux() -> Dict[str, Any]:
         # Pre-validate Symbol format
         if symbol:
             break
-        console.print("[bold red]❌ Symbol cannot be empty![/bold red]\n")
+        console.print("[bold red][Error] Symbol cannot be empty![/bold red]\n")
         
     # 2. Prompt for Side
     side = Prompt.ask(
@@ -95,11 +95,11 @@ def run_interactive_ux() -> Dict[str, Any]:
         try:
             qty = float(qty_str)
             if qty <= 0:
-                console.print("[bold red]❌ Quantity must be a positive number![/bold red]\n")
+                console.print("[bold red][Error] Quantity must be a positive number![/bold red]\n")
                 continue
             break
         except ValueError:
-            console.print(f"[bold red]❌ Invalid numeric quantity: '{qty_str}'[/bold red]\n")
+            console.print(f"[bold red][Error] Invalid numeric quantity: '{qty_str}'[/bold red]\n")
             
     # 5. Prompt for Price (only if LIMIT order)
     price_str = None
@@ -109,11 +109,11 @@ def run_interactive_ux() -> Dict[str, Any]:
             try:
                 price = float(price_str)
                 if price <= 0:
-                    console.print("[bold red]❌ Price must be a positive number![/bold red]\n")
+                    console.print("[bold red][Error] Price must be a positive number![/bold red]\n")
                     continue
                 break
             except ValueError:
-                console.print(f"[bold red]❌ Invalid numeric price: '{price_str}'[/bold red]\n")
+                console.print(f"[bold red][Error] Invalid numeric price: '{price_str}'[/bold red]\n")
 
     # Run the full validation check on the inputs
     is_valid, err_msg, validated_params = validate_inputs(
@@ -164,7 +164,7 @@ def execute_order(validated_params: Dict[str, Any]):
         if response["success"]:
             # Success display
             success_msg = Text()
-            success_msg.append("🎉 Order Placed Successfully!\n\n", style="bold spring_green3")
+            success_msg.append("[Success] Order Placed Successfully!\n\n", style="bold spring_green3")
             
             # Details panel table
             res_table = Table(box=None, padding=(0, 2))
@@ -182,7 +182,7 @@ def execute_order(validated_params: Dict[str, Any]):
                 padding=(1, 3)
             )
             console.print(panel)
-            console.print("[bold spring_green3]✓ Check logs/trading_bot.log for detailed exchange response.[/bold spring_green3]")
+            console.print("[bold spring_green3][OK] Check logs/trading_bot.log for detailed exchange response.[/bold spring_green3]")
         else:
             # Failure display
             fail_msg = (
