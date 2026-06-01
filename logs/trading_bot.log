@@ -25,3 +25,51 @@
 2026-06-01 17:36:37 [INFO] (bot.orders) Parsed response details -> OrderId: 2838947304, Status: NEW, ExecutedQty: 0.000, AvgPrice: 69000.00
 2026-06-01 17:42:32 [INFO] (root) Logging configured successfully. Log file path: D:\tradebot\logs\trading_bot.log
 2026-06-01 17:42:32 [ERROR] (bot.client) API credentials missing: BINANCE_API_KEY or BINANCE_API_SECRET is unset.
+2026-06-01 17:44:43 [INFO] (root) Logging configured successfully. Log file path: D:\tradebot\logs\trading_bot.log
+2026-06-01 17:44:54 [INFO] (root) Logging configured successfully. Log file path: D:\tradebot\logs\trading_bot.log
+2026-06-01 17:45:06 [INFO] (root) Logging configured successfully. Log file path: D:\tradebot\logs\trading_bot.log
+2026-06-01 17:45:06 [ERROR] (bot.client) API credentials missing: BINANCE_API_KEY or BINANCE_API_SECRET is unset.
+2026-06-01 17:49:09 [INFO] (root) Logging configured successfully. Log file path: D:\tradebot\logs\trading_bot.log
+2026-06-01 17:49:09 [WARNING] (bot.client) Binance API credentials missing or template placeholders detected. Falling back to Demo/Simulation Mode.
+2026-06-01 17:49:09 [INFO] (bot.client) Initializing Binance Client for Futures Testnet (https://testnet.binancefuture.com)...
+2026-06-01 17:49:09 [INFO] (bot.client) Demo Mode active. Skipping live futures_ping() check. Bot is ready for simulation.
+2026-06-01 17:49:09 [INFO] (bot.orders) PRE-ORDER REQUEST SUMMARY:
+2026-06-01 17:49:09 [INFO] (bot.orders)   Symbol: BTCUSDT
+2026-06-01 17:49:09 [INFO] (bot.orders)   Side: SELL
+2026-06-01 17:49:09 [INFO] (bot.orders)   Type: LIMIT
+2026-06-01 17:49:09 [INFO] (bot.orders)   Quantity: 0.01
+2026-06-01 17:49:09 [INFO] (bot.orders)   Price: 69500.5
+2026-06-01 17:49:09 [INFO] (bot.orders) Full request payload: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 69500.5, 'timeInForce': 'GTC'}
+2026-06-01 17:49:09 [INFO] (bot.orders) Demo Mode Active: Simulating API order placement response...
+2026-06-01 17:49:09 [INFO] (bot.orders) POST-ORDER RESPONSE RECEIVED:
+2026-06-01 17:49:09 [INFO] (bot.orders) Raw API Response: {'orderId': 2838906702, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'demo_lmt_2838906702', 'price': '69500.50', 'avgPrice': '0.00', 'origQty': '0.01', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1780316349504}
+2026-06-01 17:49:09 [INFO] (bot.orders) Parsed response details -> OrderId: 2838906702, Status: NEW, ExecutedQty: 0.000, AvgPrice: 69500.50
+2026-06-01 17:50:28 [INFO] (root) Logging configured successfully. Log file path: D:\tradebot\logs\trading_bot.log
+2026-06-01 17:50:28 [WARNING] (bot.client) Binance API credentials missing or template placeholders detected. Falling back to Demo/Simulation Mode.
+2026-06-01 17:50:28 [INFO] (bot.client) Initializing Binance Client for Futures Testnet (https://testnet.binancefuture.com)...
+2026-06-01 17:50:29 [INFO] (bot.client) Demo Mode active. Skipping live futures_ping() check. Bot is ready for simulation.
+2026-06-01 17:50:29 [INFO] (bot.orders) PRE-ORDER REQUEST SUMMARY:
+2026-06-01 17:50:29 [INFO] (bot.orders)   Symbol: BTCUSDT
+2026-06-01 17:50:29 [INFO] (bot.orders)   Side: BUY
+2026-06-01 17:50:29 [INFO] (bot.orders)   Type: MARKET
+2026-06-01 17:50:29 [INFO] (bot.orders)   Quantity: 0.01
+2026-06-01 17:50:29 [INFO] (bot.orders) Full request payload: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-06-01 17:50:29 [INFO] (bot.orders) Demo Mode Active: Simulating API order placement response...
+2026-06-01 17:50:29 [INFO] (bot.orders) POST-ORDER RESPONSE RECEIVED:
+2026-06-01 17:50:29 [INFO] (bot.orders) Raw API Response: {'orderId': 2838960292, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'demo_mkt_2838960292', 'price': '0.00', 'avgPrice': '67352.40', 'origQty': '0.01', 'executedQty': '0.01', 'cumQty': '0.01', 'cumQuote': '673.524', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1780316429384}
+2026-06-01 17:50:29 [INFO] (bot.orders) Parsed response details -> OrderId: 2838960292, Status: FILLED, ExecutedQty: 0.01, AvgPrice: 67352.40
+2026-06-01 17:50:40 [INFO] (root) Logging configured successfully. Log file path: D:\tradebot\logs\trading_bot.log
+2026-06-01 17:50:40 [WARNING] (bot.client) Binance API credentials missing or template placeholders detected. Falling back to Demo/Simulation Mode.
+2026-06-01 17:50:40 [INFO] (bot.client) Initializing Binance Client for Futures Testnet (https://testnet.binancefuture.com)...
+2026-06-01 17:50:40 [INFO] (bot.client) Demo Mode active. Skipping live futures_ping() check. Bot is ready for simulation.
+2026-06-01 17:50:40 [INFO] (bot.orders) PRE-ORDER REQUEST SUMMARY:
+2026-06-01 17:50:40 [INFO] (bot.orders)   Symbol: BTCUSDT
+2026-06-01 17:50:40 [INFO] (bot.orders)   Side: SELL
+2026-06-01 17:50:40 [INFO] (bot.orders)   Type: LIMIT
+2026-06-01 17:50:40 [INFO] (bot.orders)   Quantity: 0.01
+2026-06-01 17:50:40 [INFO] (bot.orders)   Price: 69500.0
+2026-06-01 17:50:40 [INFO] (bot.orders) Full request payload: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 69500.0, 'timeInForce': 'GTC'}
+2026-06-01 17:50:40 [INFO] (bot.orders) Demo Mode Active: Simulating API order placement response...
+2026-06-01 17:50:40 [INFO] (bot.orders) POST-ORDER RESPONSE RECEIVED:
+2026-06-01 17:50:40 [INFO] (bot.orders) Raw API Response: {'orderId': 2838907595, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'demo_lmt_2838907595', 'price': '69500.00', 'avgPrice': '0.00', 'origQty': '0.01', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1780316440732}
+2026-06-01 17:50:40 [INFO] (bot.orders) Parsed response details -> OrderId: 2838907595, Status: NEW, ExecutedQty: 0.000, AvgPrice: 69500.00
